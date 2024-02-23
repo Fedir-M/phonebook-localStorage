@@ -87,5 +87,6 @@ export class App extends Component {
       { id: 'id-7', name: 'James Milner', number: '777-777-7777' },
       { id: 'id-8', name: 'Steven Gerrard', number: '888-888-8888' },
       { id: 'id-9', name: 'Frank Lampard', number: '999-999-9999' },
+      { id: 'id-10', name: 'Xabi Alonso', number: '111-999-9999' },
     ]
 */
