@@ -1,21 +1,14 @@
-import { clsx } from 'clsx';
+// import { clsx } from 'clsx';
 import s from './Button.module.css';
 
-const Button = ({ btnName, btnType, id, onDelete }) => {
+const Button = ({ children, btnType, id, onDelete }) => {
   return btnType === 'button' ? (
-    <button
-      className={clsx(s.button, btnName === 'Delete' ? s.btnDelete : null)}
-      type={btnType}
-      onClick={() => onDelete(id)}
-    >
-      {btnName}
+    <button className={s.button} type={btnType} onClick={() => onDelete(id)}>
+      {children}
     </button>
   ) : (
-    <button
-      className={clsx(s.button, btnName === 'Delete' ? s.btnDelete : null)}
-      type={btnType}
-    >
-      {btnName}
+    <button className={s.button} type={btnType}>
+      {children}
     </button>
   );
 };

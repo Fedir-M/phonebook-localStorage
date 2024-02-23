@@ -18,7 +18,9 @@ const ContactForm = ({ onSubmit }) => {
         placeholder={'Number XXX-XXX-XXXX'}
         pattern={'[0-9]{3}-[0-9]{3}-[0-9]{4}'}
       />
-      <Button btnName={'Add contact'} btnType={'submit'} />
+      <Button btnType={'submit'}>
+        <span className={s.btnName}>Add contact</span>
+      </Button>
     </form>
   );
 };
